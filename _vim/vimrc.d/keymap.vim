@@ -27,13 +27,20 @@ imap <C-j> <down>
 imap <C-k> <up>
 imap <C-l> <right>
 
+inoremap <C-A> <Home>
+inoremap <C-D> <End>
+vnoremap <C-A> <Home>
+vnoremap <C-D> <End>
+nnoremap <C-A> <Home>
+nnoremap <C-D> <End>
+
 "  - command mode
 cmap <C-h> <left>
 cmap <C-j> <down>
 cmap <C-k> <up>
 cmap <C-l> <right>
-cmap <C-0> <home>
-cmap <C-e> <end>
+"cmap <C-0> <home>
+"cmap <C-e> <end>
 cnoremap <C-x> <del>
 
 "  - move one line down and up.
@@ -163,11 +170,11 @@ inoremap  <leader><tab> <C-x><C-p>
 " 映射指令     觸發字元     映射字串
 "
 " 註：<LEFT> 為向右鍵字元。
-inoremap ( ()<LEFT>
+"inoremap ( ()<LEFT>
 "inoremap < <><LEFT>
-inoremap [ []<LEFT>
-inoremap { {}<LEFT>
-inoremap ' ''<LEFT>
+"inoremap [ []<LEFT>
+"inoremap { {}<LEFT>
+"inoremap ' ''<LEFT>
 "inoremap " ""<LEFT>
 
 " - Quick Search
@@ -180,12 +187,12 @@ nmap <leader>cj	:colorscheme jellybeans <CR>
 
 " - Preview current HTML file
 "  - local.drx.tw (PHP)
-nnoremap <F5> :silent update<Bar>silent !firefox %:p:s?\(.\{-}/\)\{4}?http://local.drx.tw/?<CR>
-nnoremap <leader><F5> :silent update<Bar>silent !chrome %:p:s?\(.\{-}/\)\{4}?http://local.drx.tw/?<CR>
+"nnoremap <F5> :silent update<Bar>silent !firefox %:p:s?\(.\{-}/\)\{4}?http://local.drx.tw/?<CR>
+"nnoremap <leader><F5> :silent update<Bar>silent !chrome %:p:s?\(.\{-}/\)\{4}?http://local.drx.tw/?<CR>
 
 "  - current file (Ex: html, txt) 
-nnoremap <F6> :silent update<Bar>silent !firefox %:p &<CR>
-nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
+"nnoremap <F6> :silent update<Bar>silent !firefox %:p &<CR>
+"nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
 
 " - 80 column layout
 "nmap <leader>l :call HightLightOverLength()<CR>
@@ -194,3 +201,6 @@ nnoremap <leader><F6> :silent update<Bar>silent !chrome %:p &<CR>
 " - Quick open $HOME
 nmap <leader>h		:tabnew <CR>:e $HOME<CR>
 
+" - Open NERDTree
+nmap <leader>ne :NERDTree<CR>
+cmap NT :NERDTree <CR>

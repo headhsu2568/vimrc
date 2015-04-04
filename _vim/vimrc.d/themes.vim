@@ -9,9 +9,10 @@
 
 set cursorline		"highlight line.
 set cursorcolumn	"highlight colimn.
-set nocompatible	" 不要向下相同。
-"set number
-set relativenumber	" 絕對行號。
+set nocompatible	" 不要向下相同
+set number
+"set relativenumber	    " 相對行號
+set norelativenumber	" 絕對行號
 
 " - always show the tab bar.
 "set showtabline=2
@@ -31,7 +32,7 @@ if has('gui')
 	set guioptions-=L " remove Scroll (Left).
 	set guioptions-=r " remove Scroll (Right of Split window).
 	set guioptions-=R " remove Scroll (Right).
-  set columns=80 lines=38 " width x high size
+    set columns=80 lines=38 " width x high size
 	set t_Co=256		  " support 256 color.
 
 	" == Favorites Color ==
@@ -49,7 +50,8 @@ endif
 if !has('gui')
 	"set background=dark
 	set t_Co=256		" support 256 color.
-	colorscheme jellybeans
+	"colorscheme jellybeans
+    colorscheme fu
 endif
 
 " - font type and size setting.

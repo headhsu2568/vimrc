@@ -37,14 +37,16 @@ endif
 
 set showcmd		" Show (partial) command in status line.
 set showmode	" Show '-insert-' Mode at the lower left.
-"set showmatch		" Show matching brackets.
-"set ignorecase		" Do case insensitive matching
-"set smartcase		" Do smart case matching
+set showmatch		" Show matching brackets.
+set ignorecase		" Do case insensitive matching
+set smartcase		" Do smart case matching
 set incsearch		" Incremental search (is), 使用隨打即找的搜尋功能。預設 off。
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden         " Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
 set mouse=nv		" Enable mouse usage (Normal + Visual modes)
+set nocompatible
+set backspace=2     " Enable backspace
 
 " = Cutsom Main Environment =
 
@@ -69,9 +71,9 @@ set autoindent		" (ai)
 set cindent
 set expandtab		" Set Tab to Space.
 set smartindent
-set tabstop=2
-set softtabstop=2	" Set Soft tab stop.
-set shiftwidth=2	" Set Soft tab width.
+set tabstop=4
+set softtabstop=4	" Set Soft tab stop.
+set shiftwidth=4	" Set Soft tab width.
 filetype indent on
 
 " - Set Scroll setting
@@ -92,9 +94,6 @@ set wrap
 
 " - Do not redraw while running macros (much faster).
 set lazyredraw
-
-" - Don't make noise
-"set noerrorbells
 
 " - Set Folding 
 set foldenable
