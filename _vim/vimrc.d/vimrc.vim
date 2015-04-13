@@ -102,13 +102,13 @@ set foldcolumn=1
 set foldlevel=6
 
 "  - save my folds.
-if !isdirectory("view")
-  " put view to tmp.
-  silent !mkdir /tmp/vim-view/ > /dev/null 2>&1
-  silent !ln -s /tmp/vim-view/ ~/.vim/view > /dev/null 2>&1
-endif
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
+"if !isdirectory("view")
+"  " put view to tmp.
+"  silent !mkdir /tmp/vim-view/ > /dev/null 2>&1
+"  silent !ln -s /tmp/vim-view/ ~/.vim/view > /dev/null 2>&1
+"endif
+"autocmd BufWinLeave *.* mkview
+"autocmd BufWinEnter *.* silent loadview
 
 " disable sound on errors
 set visualbell
@@ -118,6 +118,9 @@ set tm=500
 
 " 在 fish 裡相容 Vim 裡的 Neobundle。
 set shell=/bin/bash
+
+" 讓 NERDTree 開在右邊 window
+let NERDTreeWinPos=1
 
 " -----------------------------------
 "  Author : Chu-Siang Lai

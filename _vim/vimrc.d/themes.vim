@@ -36,8 +36,9 @@ if has('gui')
 	set t_Co=256		  " support 256 color.
 
 	" == Favorites Color ==
-	colorscheme fu
-	"colorscheme ir_black
+	"colorscheme fu
+    "colorscheme jellybeans
+	colorscheme ir_black
 	"colorscheme peaksea
 	"colorscheme risto
 	"colorscheme zenburn

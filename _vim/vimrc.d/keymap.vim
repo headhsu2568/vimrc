@@ -27,12 +27,12 @@ imap <C-j> <down>
 imap <C-k> <up>
 imap <C-l> <right>
 
-inoremap <C-A> <Home>
-inoremap <C-D> <End>
-vnoremap <C-A> <Home>
-vnoremap <C-D> <End>
-nnoremap <C-A> <Home>
-nnoremap <C-D> <End>
+inoremap <C-e> <Home>
+inoremap <C-d> <End>
+vnoremap <C-e> <Home>
+vnoremap <C-d> <End>
+nnoremap <C-w> <Home>
+nnoremap <C-e> <End>
 
 "  - command mode
 cmap <C-h> <left>
@@ -183,6 +183,7 @@ nmap <F3>	/<C-r>0<CR>
 
 " - Color Scheme
 nmap <leader>cf	:colorscheme fu <CR>
+nmap <leader>ci	:colorscheme ir_black <CR>
 nmap <leader>cj	:colorscheme jellybeans <CR>
 
 " - Preview current HTML file

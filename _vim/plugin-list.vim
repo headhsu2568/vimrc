@@ -164,7 +164,7 @@ nmap <leader>e  :NERDTreeToggle<CR>
 " ## vim-notes
 NeoBundle 'xolox/vim-notes'
 NeoBundle 'xolox/vim-misc'
-let g:notes_directories = ['~/Dropbox/notes']
+let g:notes_directories = ['~/notes']
 let g:notes_suffix = '.txt'
 
 " ## numbers.vim
