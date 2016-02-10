@@ -27,12 +27,12 @@ imap <C-j> <down>
 imap <C-k> <up>
 imap <C-l> <right>
 
-inoremap <C-a> <Home>
-inoremap <C-d> <End>
-vnoremap <C-a> <Home>
-vnoremap <C-d> <End>
-nnoremap <C-a> <Home>
-nnoremap <C-d> <End>
+inoremap <C-d> <Home>
+inoremap <C-e> <End>
+vnoremap <C-d> <Home>
+vnoremap <C-e> <End>
+nnoremap <C-d> <Home>
+nnoremap <C-e> <End>
 
 "  - command mode
 cmap <C-h> <left>
