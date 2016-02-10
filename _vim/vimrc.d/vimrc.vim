@@ -117,7 +117,7 @@ set t_vb=
 set tm=500
 
 " 在 fish 裡相容 Vim 裡的 Neobundle。
-set shell=/bin/bash
+set shell=/bin/tcsh
 
 " 讓 NERDTree 開在右邊 window
 let NERDTreeWinPos=1

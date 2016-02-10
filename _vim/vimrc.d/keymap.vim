@@ -27,12 +27,12 @@ imap <C-j> <down>
 imap <C-k> <up>
 imap <C-l> <right>
 
-inoremap <C-e> <Home>
+inoremap <C-a> <Home>
 inoremap <C-d> <End>
-vnoremap <C-e> <Home>
+vnoremap <C-a> <Home>
 vnoremap <C-d> <End>
-nnoremap <C-w> <Home>
-nnoremap <C-e> <End>
+nnoremap <C-a> <Home>
+nnoremap <C-d> <End>
 
 "  - command mode
 cmap <C-h> <left>
@@ -58,7 +58,7 @@ endif
 
 
 " - Re-Read vim Configure.
-nmap <leader>s		:source $HOME/.vimrc <CR>
+"nmap <leader>s		:source $HOME/.vimrc <CR>
 
 " - quick quit vim.
 nmap Z	:x <CR>
@@ -137,8 +137,8 @@ xnoremap <s-tab> <gv
 "nmap -b		:set guioptions-=b <CR>
 "nmap -l		:set guioptions-=L <CR>
 "nmap -r		:set guioptions-=r <CR>
-nmap <F7>		:set guioptions+=mT <CR>
-nmap <F8>		:set guioptions-=mT <CR>
+"nmap <F7>		:set guioptions+=mT <CR>
+"nmap <F8>		:set guioptions-=mT <CR>
 
 "  - Split
 nmap <C-tab>	<C-w>w
