@@ -203,7 +203,8 @@ nmap <leader>cj	:colorscheme jellybeans <CR>
 nmap <leader>h		:tabnew <CR>:e $HOME<CR>
 
 " - Open NERDTree
-nmap <leader>ne :NERDTree<CR>
+"nmap <leader>ne :NERDTree<CR>      " - integrate to Trinity keymap
+cmap nt :NERDTree <CR>
 cmap NT :NERDTree <CR>
 
 " - Cscope keymap
@@ -372,13 +373,22 @@ endif
 
 " Trinity keymap
 " Open and close all the three plugins on the same time 
-nmap <F7>  :TrinityToggleAll<CR> 
+nmap <F7>   :TrinityToggleAll<CR> 
+
+" Open and close Taglist and Source Explorer
+nmap <F8>   :TrinityToggleTagListSrcExpl<CR>
+
+" Open and close Taglist and NERDTree
+nmap <F9>   :TrinityToggleTagListNERDTree<CR>
 
 " Open and close the Source Explorer separately 
-nmap <F8>  :TrinityToggleSourceExplorer<CR> 
+"nmap <F8>  :TrinityToggleSourceExplorer<CR> 
+nmap <leader>se :TrinityToggleSourceExplorer<CR> 
 
 " Open and close the Taglist separately 
-nmap <F9>  :TrinityToggleTagList<CR> 
+"nmap <F9>  :TrinityToggleTagList<CR> 
+nmap <leader>tl :TrinityToggleTagList<CR>
 
 " Open and close the NERD Tree separately 
-nmap <F10> :TrinityToggleNERDTree<CR>
+"nmap <F10> :TrinityToggleNERDTree<CR>
+nmap <leader>ne :TrinityToggleNERDTree<CR>

@@ -41,8 +41,8 @@ NeoBundle 'L9'
 let g:acp_behaviorSnipmateLength = 1
 
 " ## c.vim
-NeoBundleLazy 'c.vim'
-autocmd FileType c NeoBundleSource c.vim
+"NeoBundleLazy 'c.vim'
+"autocmd FileType c NeoBundleSource c.vim
 
 " ## calendar.vim
 "NeoBundle 'calendar.vim'
