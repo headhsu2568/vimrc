@@ -122,6 +122,12 @@ set shell=/bin/tcsh
 " 讓 NERDTree 開在右邊 window
 let NERDTreeWinPos=1
 
+" Tagbar reconfiguration
+let tagbar_left=1
+let tagbar_width=25
+let tagbar_previewwin_pos='botright'
+let tagbar_autopreview=1
+
 " -----------------------------------
 "  Author : Chu-Siang Lai
 "  E-mail : jonny (at) drx.tw

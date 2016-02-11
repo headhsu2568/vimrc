@@ -392,3 +392,6 @@ nmap <leader>tl :TrinityToggleTagList<CR>
 " Open and close the NERD Tree separately 
 "nmap <F10> :TrinityToggleNERDTree<CR>
 nmap <leader>ne :TrinityToggleNERDTree<CR>
+
+" Tagbar keymap
+nmap <leader>tb :TagbarToggle<CR>
