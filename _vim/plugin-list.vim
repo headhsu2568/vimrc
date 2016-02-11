@@ -324,7 +324,8 @@ NeoBundle 'taglist.vim'
 "nmap <leader>t :<C-u>Tlist<CR>
 
 " ## Trinity (SrcExpl need)
-NeoBundle "wesleyche/Trinity"
+"NeoBundle 'wesleyche/Trinity'      " - original repo
+NeoBundle 'headhsu2568/Trinity'
 
 " ## vimcdoc-tw
 NeoBundle 'chusiang/vimcdoc-tw'
