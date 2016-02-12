@@ -402,3 +402,5 @@ nmap <leader>tb :TagbarToggle<CR>
 
 " Multiple Cursor keymap
 let g:multi_cursor_skip_key='<C-m>'
+let g:multi_cursor_start_word_key='<C-n>'
+let g:multi_cursor_start_key='g<C-n>'
