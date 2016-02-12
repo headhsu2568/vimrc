@@ -35,13 +35,13 @@ nnoremap <C-d> <Home>
 nnoremap <C-e> <End>
 
 "  - command mode
-cmap <C-h> <left>
-cmap <C-j> <down>
-cmap <C-k> <up>
-cmap <C-l> <right>
+"cmap <C-h> <left>
+"cmap <C-j> <down>
+"cmap <C-k> <up>
+"cmap <C-l> <right>
 "cmap <C-0> <home>
 "cmap <C-e> <end>
-cnoremap <C-x> <del>
+"cnoremap <C-x> <del>
 
 "  - move one line down and up.
 if has('gui_macvim')
@@ -399,3 +399,6 @@ nmap <leader>ne :TrinityToggleNERDTree<CR>
 
 " Tagbar keymap
 nmap <leader>tb :TagbarToggle<CR>
+
+" Multiple Cursor keymap
+let g:multi_cursor_skip_key='<C-m>'
