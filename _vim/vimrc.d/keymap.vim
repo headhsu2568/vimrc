@@ -182,9 +182,13 @@ inoremap  <leader><tab> <C-x><C-p>
 nmap <F3>	/<C-r>0<CR>
 
 " - Color Scheme
+nmap <leader>cj	:colorscheme jellybeans <CR>
 nmap <leader>cf	:colorscheme fu <CR>
 nmap <leader>ci	:colorscheme ir_black <CR>
-nmap <leader>cj	:colorscheme jellybeans <CR>
+nmap <leader>ct :colorscheme twilight <CR>
+nmap <leader>cg :colorscheme grb256 <CR>
+nmap <leader>cr :colorscheme railscasts <CR>
+nmap <leader>cd :colorscheme distinguished <CR>
 
 " - Preview current HTML file
 "  - local.drx.tw (PHP)
