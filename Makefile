@@ -20,6 +20,11 @@ backup:
 	@echo ''
 
 install:
+	@echo '--Ensure file format is comfort to Unix-like shell at Windows system'
+	dos2unix _vimrc
+	dos2unix _vim/*.vim
+	dos2unix _vim/colors/*.vim
+	dos2unix _vim/vimrc.d/*.vim
 	@echo '--Starting install vim setting...--'
 	cat _vimrc > ${FILE_VIMRC}
 	cat _gvimrc > ${FILE_GVIMRC}
